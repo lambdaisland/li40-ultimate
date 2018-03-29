@@ -1,0 +1,3 @@
+#!/bin/bash
+clj -J-Dclojure.server.repl="{:port 5554 :accept clojure.core.server/repl}" \
+    -J-Dclojure.server.repl="{:port 6666 :accept user/exec}"

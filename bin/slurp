@@ -1,0 +1,2 @@
+#!/bin/bash
+{ echo '(user/slrp)' ; cat - ; } | nc localhost 6666

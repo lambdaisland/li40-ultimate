@@ -1,0 +1,3 @@
+#!/bin/bash
+[[ -p .repl_fifo ]] || mkfifo .repl_fifo
+nc -k -l localhost 5555 < .repl_fifo | nc localhost 5554 > .repl_fifo
